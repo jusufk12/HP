@@ -1,0 +1,53 @@
+order id;reference id;order date;status;status date;last name;first name;gender;date of birth;analysis code;analysis;result;unit;normal range;indicator
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;FARBEFE;Colour;braun;-;;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;KONSIS_Stuhl;Consistency;breiig;-;;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ENTEROTYPA712;Enterotype;1;-;;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;BIFIDOH1A712;>>Bifidobacterium#species;adolescentis;%;;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;BIFIDOH2A712;>>Bifidobacterium#species;longum;%;;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;CANDIDAALBFE;Candida albicans;< 1,0 x 10^3;CFU/g faeces;< 1,0 x 10^3;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;CANDIDASPFE;Candida species;< 1,0 x 10^3;CFU/g faeces;< 1,0 x 10^3;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ENTEROCOSPFE;Enterococcus species;2,0 x 10^5;CFU/g faeces;10^6  - 10^7;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ENTEROBACSPFE;Enterobacter species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ECOLIBIOFE;Escherichia coli Biovare;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ECOLIFE;Escherichia coli;4,0 x 10^5;CFU/g faeces;10^6 -  10^7;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;GEOTRICANDFE;Geotrichum candidum;< 1,0 x 10^3;CFU/g faeces;< 1,0 x 10^3;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;HAFNIASPFE;Hafnia species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;KLEBSIELLASPFE;Klebsiella species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;LACTOBACSPFE;Lactobacillus species;1,0 x 10^6;CFU/g faeces;10^5 - 10^7;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;PROTEUSSPFE;Proteus species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;SCHIMMELPFE;Moulds;negativ;-;negativ;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;SERRATIASPFE;Serratia species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;MORGABAKA711;Morganella spp.;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;PHFE;pH;06. Mai;-;5,8 - 6,5;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;GRAD712;Diversity;Mai 68;-;> 5,0;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;FIRMBAKA712;Firmicutes/Bacteroidetes;Jan 36;Quotient;< 1,5;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;BACTEROIDETESA712;Bacteroidetes;39.4;%;30 - 60;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;FIRMICUTESA712;Firmicutes;53.5;%;30 - 60;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;DYSBIOSEIA712;Dysbiose-Index;;Index;;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;BACTEROIDESA712;Bacteroides;3,4 x 10^11;CFU/g faeces;> 1,5 x 10^11;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;PREVOTA712;Prevotella;4,5 x 10^7;CFU/g faeces;> 1,0 x 10^10;---
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;EUBRECA712;Eubacterium rectale;8,4 x 10^9;CFU/g faeces;> 1,0 x 10^10;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;EUBHALA712;Eubacterium hallii;3,4 x 10^9;CFU/g faeces;> 5,0 x 10^9;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;RUMINOA712;Ruminococcus spp.;3,9 x 10^10;CFU/g faeces;> 3,0 x 10^10;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;BUTYGESAMTA712;Total bacterial count;1,3 x 10^11;CFU/g faeces;> 1,3 x 10^11;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;COPROCA712;Coprococcus;1,6 x 10^10;CFU/g faeces;> 2,0 x 10^10;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;FUSOBAKTA712;Fusobacterium spp.;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^7;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;HAEMOA712;Haemophilus;1,1 x 10^9;CFU/g faeces;< 1,0 x 10^9;+
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ACINETOA712;Acinetobacter;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^6;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;SRBA712;Sulphate reducing bacteria;8,5 x 10^8;CFU/g faeces;< 2,0 x 10^9;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;FAECALIA712;Faecalibacterium prausnitzii;7,1 x 10^10;CFU/g faeces;> 5,0 x 10^10;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;CLGESAMTA712;Clostridia total bacterial count;2,1 x 10^9;CFU/g faeces;< 4,0 x 10^9;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;BIFIDOBAKA712;Bifidobacteria;1,4 x 10^10;CFU/g faeces;> 5,0 x 10^9;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;EQUOLBAKA712;Equol producing bacteria;1,9 x 10^9;CFU/g faeces;> 5,0 x 10^9;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;AKKERMANA712;Akkermansia muciniphila;7,9 x 10^9;CFU/g faeces;> 5,0 x 10^9;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;AKKERMANA712;Akkermansia muciniphila;7,9 x 10^9;CFU/g faeces;> 5,0 x 10^9;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;FAECALIPRAUA712;Faecalibacterium prausnitzii;7,1 x 10^10;CFU/g faeces;> 5,0 x 10^10;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ROSEBUA712;Roseburia spp.;6,0 x 10^9;CFU/g faeces;> 2,0 x 10^10;-
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;CLCLUSTIA712;Clostridia cluster I;< 1,0 x 10^6;CFU/g faeces;< 2,0 x 10^9;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;DIENTAMOEBFA178;Dientamoeba fragilis;negativ;-;negativ;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;CYCLOSPORAA178;Cyclospora cayetanensis;negativ;-;negativ;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;BLASTOCHA178;Blastocystis hominis;positiv;-;negativ;+
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;CRYPTOSPA178;Cryptosporidium spp.;negativ;-;negativ;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;ENTAMOEBAHA178;Entamoeba histolytica;negativ;-;negativ;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;GIARDIALA178;Giardia lamblia;negativ;-;negativ;
+11316878;;01.09.2017;AR;04.09.2017;-;-;M;23.01.1964;HISTBAKSEQSUMA712A;Histaminbildende Bakterien;< 1,0 x 10^7;CFU/g faeces;< 5,0 x 10^8;

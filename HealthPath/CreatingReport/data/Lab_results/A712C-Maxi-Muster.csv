@@ -1,0 +1,73 @@
+order id;reference id;order date;status;status date;last name;first name;gender;date of birth;analysis code;analysis;result;unit;normal range;indicator
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;FARBEFE;Colour;hellbraun;-;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;KONSIS_Stuhl;Consistency;breiig;-;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;SONSTA712;Other;2.4;%;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ENTEROTYPA712;Enterotype;1;-;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BIFIDOH1A712;>>Bifidobacterium#species;adolescentis;%;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BIFIDOH2A712;>>Bifidobacterium#species;longum;%;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ADLERCREUTZIA712;>>Adlercreutzia spp.;p;-;;+
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;EGERTHA712;>>Eggerthella lenta;n;-;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;SLACKIA712;>>Slackia. spp.;n;-;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BACTERH1A712;>>Bacteroides#species;uniformis;%;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BACTERH2A712;>>Bacteroides#species;ovatus;%;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CANDIDAALBFE;Candida albicans;< 1,0 x 10^3;CFU/g faeces;< 1,0 x 10^3;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CANDIDASPFE;Candida species;< 1,0 x 10^3;CFU/g faeces;< 1,0 x 10^3;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ENTEROCOSPFE;Enterococcus species;4,0 x 10^5;CFU/g faeces;10^6  - 10^7;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ENTEROBACSPFE;Enterobacter species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ECOLIBIOFE;Escherichia coli Biovare;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ECOLIFE;Escherichia coli;2,0 x 10^6;CFU/g faeces;10^6 -  10^7;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;GEOTRICANDFE;Geotrichum candidum;< 1,0 x 10^3;CFU/g faeces;< 1,0 x 10^3;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;HAFNIASPFE;Hafnia species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;KLEBSIELLASPFE;Klebsiella species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;LACTOBACSPFE;Lactobacillus species;6,0 x 10^5;CFU/g faeces;10^5 - 10^7;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;PROTEUSSPFE;Proteus species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;SCHIMMELPFE;Moulds;negativ;-;negativ;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;SERRATIASPFE;Serratia species;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;MORGABAKA711;Morganella spp.;< 1,0 x 10^4;CFU/g faeces;< 1,0 x 10^4;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;PHFE;pH;6;-;5,8 - 6,5;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;GRAD712;Diversity;5.63;-;> 5,0;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;FIRMBAKA712;Firmicutes/Bacteroidetes;1.93;Quotient;< 1,5;+
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BACTEROIDETESA712;Bacteroidetes;31.3;%;30 - 60;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;FIRMICUTESA712;Firmicutes;60.2;%;30 - 60;+
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;FUSOBA712;Fusobacteria;0;%;0,0 - 1,0;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;PROTEOA712;Proteobacteria;3.5;%;1,5 - 5,0;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;DYSBIOSEIA712;Dysbiose-Index;;Index;;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BACTEROIDESA712;Bacteroides;1,8 x 10^11;CFU/g faeces;> 1,5 x 10^11;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;PREVOTA712;Prevotella;6,0 x 10^7;CFU/g faeces;> 1,0 x 10^10;--
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;EUBRECA712;Eubacterium rectale;1,8 x 10^10;CFU/g faeces;> 1,0 x 10^10;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;EUBHALA712;Eubacterium hallii;1,3 x 10^9;CFU/g faeces;> 5,0 x 10^9;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;RUMINOA712;Ruminococcus spp.;6,2 x 10^10;CFU/g faeces;> 3,0 x 10^10;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BUTYRVIBA712;Butyrivibrio spp.;5,0 x 10^8;CFU/g faeces;> 5,0 x 10^9;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CLBUTYRA712;Cl. butyricum;1,0 x 10^9;CFU/g faeces;> 1,0 x 10^10;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BUTYGESAMTA712;Total bacterial count;1,8 x 10^11;CFU/g faeces;> 1,3 x 10^11;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CLHISTA712;>>Clostridium histolyticum;< 1,0 x 10^6;CFU/g faeces;< 2,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CLPERFRINA712;>>Clostridium perfringens;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^8;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CLSPOROA712;>>Clostridium sporogenes;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^8;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CHRISTENA712;Christensenellaceae;1,7 x 10^8;CFU/g faeces;> 1,0 x 10^9;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;COPROCA712;Coprococcus;8,4 x 10^9;CFU/g faeces;> 2,0 x 10^10;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;DIALINA712;Dialister invisus;< 1,0 x 10^6;CFU/g faeces;< 4,0 x 10^10;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;FUSOBAKTA712;Fusobacterium spp.;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^7;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;HAEMOA712;Haemophilus;2,3 x 10^8;CFU/g faeces;< 1,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ACINETOA712;Acinetobacter;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^6;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;SRBA712;Sulphate reducing bacteria;4,1 x 10^8;CFU/g faeces;< 2,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;DEPIGERA712;Desulfovibrio piger;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;DEPIGRAA712;Desulfomonas pigra;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BILOPWADSA712;Bilophila wadsworthii;< 1,0 x 10^6;CFU/g faeces;< 2,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;OXALOBA712;Oxalobacter formigenes;< 1,0 x 10^6;CFU/g faeces;> 1,0 x 10^8;---
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;FAECALIA712;Faecalibacterium prausnitzii;9,2 x 10^10;CFU/g faeces;> 5,0 x 10^10;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CLGESAMTA712;Clostridia total bacterial count;3,2 x 10^9;CFU/g faeces;< 4,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BIFIDOBAKA712;Bifidobacteria;1,5 x 10^10;CFU/g faeces;> 5,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;EQUOLBAKA712;Equol producing bacteria;8,1 x 10^8;CFU/g faeces;> 5,0 x 10^9;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;AKKERMANA712;Akkermansia muciniphila;9,6 x 10^9;CFU/g faeces;> 5,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;AKKERMANA712;Akkermansia muciniphila;9,6 x 10^9;CFU/g faeces;> 5,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ACTINOBA712;Actinobacteria;1.6;%;1,0 - 5;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;VERUCCOMA712;Verrucomicrobia;1;%;1,5 - 5;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;FAECALIPRAUA712;Faecalibacterium prausnitzii;9,2 x 10^10;CFU/g faeces;> 5,0 x 10^10;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ROSEBUA712;Roseburia spp.;2,9 x 10^9;CFU/g faeces;> 2,0 x 10^10;-
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CLCLUSTIA712;Clostridia cluster I;< 1,0 x 10^6;CFU/g faeces;< 2,0 x 10^9;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;DIENTAMOEBFA178;Dientamoeba fragilis;negativ;-;negativ;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CYCLOSPORAA178;Cyclospora cayetanensis;negativ;-;negativ;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;BLASTOCHA178;Blastocystis hominis;negativ;-;negativ;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;CRYPTOSPA178;Cryptosporidium spp.;negativ;-;negativ;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;ENTAMOEBAHA178;Entamoeba histolytica;negativ;-;negativ;
+11399854;;09.01.2018;AR;17.01.2018;-;-;W;26.07.1977;GIARDIALA178;Giardia lamblia;negativ;-;negativ;
