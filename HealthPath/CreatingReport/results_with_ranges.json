@@ -1,0 +1,84 @@
+﻿{
+  "0": {
+    "FUSOBA712": 0,
+    "ACTINOBA712": -1,
+    "BACTEROIDETESA712": 0,
+    "PROTEOA712": 1,
+    "VERUCCOMA712": -1
+  },
+  "0/3": {
+    "CANDIDAALBFE": 0,
+    "CANDIDASPFE": 0,
+    "ENTEROBACSPFE": 0,
+    "ECOLIBIOFE": 0,
+    "ECOLIFE": 0,
+    "GEOTRICANDFE": 0,
+    "HAFNIASPFE": 0,
+    "KLEBSIELLASPFE": 0,
+    "PROTEUSSPFE": 0,
+    "SERRATIASPFE": 0,
+    "CLGESAMTA712": 0,
+    "CLCLUSTIA712": 0,
+    "SRBA712": 0,
+    "CLPERFRINA712": 0,
+    "ACINETOA712": 0,
+    "DEPIGRAA712": 0,
+    "DIALINA712": 0,
+    "BILOPWADSA712": 0,
+    "CLHISTA712": 0,
+    "FUSOBAKTA712": 0,
+    "FIRMBAKA712": 0,
+    "HAEMOA712": 0,
+    "MORGABAKA711": 0,
+    "METHANOBREVIA712": 0,
+    "CLSPOROA712": 0,
+    "DEPIGERA712": 0
+  },
+  "-2/3": {
+    "ENTEROCOSPFE": 0
+  },
+  "no_value": {
+    "FARBEFE": "brown",
+    "KONSISFE": 3,
+    "ENTEROTYPA712": 1,
+    "DYSBIOSEIA712": "NaN"
+  },
+  "-2/2": {
+    "LACTOBACSPFE": -2
+  },
+  "-3/0": {
+    "PAFE": 0,
+    "BUTYGESAMTA712": 0,
+    "EQUOLBAKA712": -1,
+    "BIFIDOBAKA712": -1,
+    "BUTYRVIBA712": -1,
+    "FAECALIA712": -1,
+    "EUBHALA712": -1,
+    "PREVOTA712": 0,
+    "ROSEBUA712": 0,
+    "BACTEROIDESA712": 0,
+    "FAECALIPRAUA712": -1,
+    "CHRISTENA712": -1,
+    "COPROCA712": -1,
+    "CLBUTYRA712": 0,
+    "EUBRECA712": -1,
+    "RUMINOA712": -1,
+    "OXALOBA712": 0
+  },
+  "-3/3": {
+    "PHFE": 8,
+    "SIGAFE": 0
+  },
+  "0/2": {
+    "HISTBAKSEQSUMA712A": 0,
+    "ZONUFE": 0
+  },
+  "-3/1": {
+    "AKKERMANA712": -1
+  },
+  "n/p": {
+    "ADLERCREUTZIA712": 0,
+    "EGERTHA712": 2,
+    "SLACKIA712": 2
+  }
+}
