@@ -23,6 +23,8 @@ def get_key_value_pair_results(path):
     final_result = {}
     ranges_display = {}
     for code, result in analysis_code_and_result.items():
+        if code == "DIALINA712":
+            print()
         if code not in skip_values:
             if code in special_cases:
                 final_result = helper.if_in_special_cases(code, result, final_result, ranges_display)

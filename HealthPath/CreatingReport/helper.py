@@ -132,10 +132,9 @@ def three_values(lesser_or_bigger_normal_range, result, normal_range, final_resu
             final_result[code] = 0
         else:
             final_result[code] = position-3
-    if code == "PHFE":
-        normalized_value = final_result[code]
-        real_value = result[0]
-        final_result[code] = [normalized_value, real_value]
+
+    normalized_value = final_result[code]
+    final_result[code] = [normalized_value, round(lab_result, 1)]
     return final_result
 
 
