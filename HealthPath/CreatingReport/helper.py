@@ -107,17 +107,15 @@ def get_position(new_range, lab_result):
 
 def three_values(lesser_or_bigger_normal_range, result, normal_range, final_result, code, new_range):
     if check_if_list_is_in_list(new_range):
-        print("")
+        pass
     if len(result) == 1:
         lab_result = result[0]
     elif len(result) == 3:
         lab_result = float(result[0]) * float(result[1]) ** float(result[2])
-    else:
-        print()
     try:
         get_position(new_range, lab_result)
     except:
-        print()
+        pass
 
     position = new_range.index(lab_result)
     if new_range.count(lab_result) == 1:
@@ -134,6 +132,10 @@ def three_values(lesser_or_bigger_normal_range, result, normal_range, final_resu
             final_result[code] = 0
         else:
             final_result[code] = position-3
+    if code == "PHFE":
+        normalized_value = final_result[code]
+        real_value = result[0]
+        final_result[code] = [normalized_value, real_value]
     return final_result
 
 
@@ -165,8 +167,7 @@ def one_value(lesser_or_bigger_normal_range, normal_range, result, final_result,
         lab_result = float(result[0]) * float(result[1]) ** float(result[2])
     elif len(result) == 1:
         lab_result = result[0]
-    else:
-        print(result)
+
     if lesser_or_bigger_normal_range == ">":
         if lab_result >= normal_range_value:
             final_result[code] = "positive"
@@ -285,6 +286,7 @@ def if_in_special_cases(code, result, final_result, ranges_display):
         ranges_display[code] = 'no_value'
     elif code == 'PHFE':
         try:
+
             final_result[code] = int(result)
         except:
             result = re.findall(r'\d+', result)

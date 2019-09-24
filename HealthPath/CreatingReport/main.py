@@ -7,7 +7,7 @@ skip_values = ['CALPFE', 'HELIOAGFE', 'HBFE', 'SCHIMMELPFE', 'SONSTA712', 'GIARD
                'BIFIDOH1A712', 'ENTAMOEBAHA178', 'DIENTAMOEBFA178', 'CYCLOSPORAA178', 'CRYPTOSPA178', 'FIRMICUTESA712',
                'BACTERH1A712']
 
-special_cases = ['KONSIS_Stuhl', 'KONSISFE', 'ENTEROTYPA712', 'PHFE']
+special_cases = ['KONSIS_Stuhl', 'KONSISFE', 'ENTEROTYPA712']
 
 
 def get_key_value_pair_results(path):
