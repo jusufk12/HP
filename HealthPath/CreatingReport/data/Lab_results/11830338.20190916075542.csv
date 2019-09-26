@@ -28,7 +28,7 @@ order id;reference id;order date;status;status date;last name;first name;gender;
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;SRBA712;Sulphate reducing bacteria;5,1 x 10^8;CFU/g faeces;< 2,0 x 10^9;
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;EQUOLBAKA712;Equol producing bacteria;1,8 x 10^9;CFU/g faeces;> 5,0 x 10^9;-
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;BIFIDOBAKA712;Bifidobacteria;2,8 x 10^9;CFU/g faeces;> 5,0 x 10^9;-
-11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;GRAD712;Diversity;04. Mrz;-;> 5,0;-
+11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;GRAD712;Diversity;4,3;-;> 5,0;-
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;CLPERFRINA712;Clostridium perfringens;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^8;
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;HISTBAKSEQSUMA712A;Histamine producing bacteria;5,3 x 10^8;CFU/g faeces;< 5,0 x 10^8;+
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;FUSOBA712;Fusobacteria;0;%;0,0 - 1,0;
@@ -75,5 +75,5 @@ order id;reference id;order date;status;status date;last name;first name;gender;
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;DEPIGERA712;Desulfovibrio piger;< 1,0 x 10^6;CFU/g faeces;< 1,0 x 10^9;
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;CRYPTOSPA178;Cryptosporidium spp.;negative;-;negative;
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;RUMINOA712;Ruminococcus spp.;2,8 x 10^10;CFU/g faeces;> 3,0 x 10^10;-
-11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;FIRMICUTESA712;Firmicutes;20. Mai;%;30 - 60;-
+11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;FIRMICUTESA712;Firmicutes;20,5;%;30 - 60;-
 11830338;1,0106E+11;09.08.2019;AR;22.08.2019;Nehme;Richard;M;11.12.1984;OXALOBA712;Oxalobacter formigenes;2,2 x 10^8;CFU/g faeces;> 1,0 x 10^8;

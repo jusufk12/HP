@@ -3,31 +3,31 @@ import math
 import os
 
 
-skip_values = ['CALPFE', 'HELIOAGFE', 'HBFE', 'SCHIMMELPFE', 'SONSTA712', 'GIARDIALA178', 'GRAD712', 'BLASTOCHA178',
-               'BIFIDOH1A712', 'ENTAMOEBAHA178', 'DIENTAMOEBFA178', 'CYCLOSPORAA178', 'CRYPTOSPA178', 'FIRMICUTESA712',
+skip_values = ['HELIOAGFE', 'HBFE', 'SCHIMMELPFE', 'SONSTA712', 'GIARDIALA178', 'BLASTOCHA178',
+               'BIFIDOH1A712', 'ENTAMOEBAHA178', 'DIENTAMOEBFA178', 'CYCLOSPORAA178', 'CRYPTOSPA178',
                'BACTERH1A712']
 
-special_cases = ['KONSIS_Stuhl', 'KONSISFE', 'ENTEROTYPA712']
+special_cases = ['KONSIS_Stuhl', 'KONSISFE', 'ENTEROTYPA712', "CALPFE"]
 
 
 def get_key_value_pair_results(path):
     mini_lab = helper.read_lab_results(path)
-    encyclopedia = helper.read_encyclopedia()
+    encyclopedia, calprotectin = helper.read_encyclopedia()
     encyclopedia = encyclopedia.dropna(subset=['Code'])
     encyclopedia = encyclopedia.set_index("Code")
     encyclopedia = encyclopedia[['red L', 'orange L', 'yellow L', 'Ok ', 'yellow H', 'orange H', 'red H']]
     analysis_and_result = dict(zip(mini_lab['analysis'], mini_lab['result']))
     analysis_code_and_result = dict(zip(mini_lab['analysis code'], mini_lab['result']))
     analysis_code_and_normal_range = dict(zip(mini_lab['analysis code'], mini_lab['normal range']))
-
+    gender = mini_lab['gender'].values[0]
+    date_of_birth = mini_lab['date of birth'].values[0]
+    age_days = helper.calculates_age_days(date_of_birth)
     final_result = {}
     ranges_display = {}
     for code, result in analysis_code_and_result.items():
-        if code == "DIALINA712":
-            print()
         if code not in skip_values:
             if code in special_cases:
-                final_result = helper.if_in_special_cases(code, result, final_result, ranges_display)
+                final_result = helper.if_in_special_cases(code, result, final_result, ranges_display, gender, age_days)
                 continue
             try:
                 ranges = encyclopedia.loc[code].tolist()

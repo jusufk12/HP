@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import re
+from datetime import date
+from dateutil import parser
 
 
 def read_lab_results(path):
@@ -13,8 +15,9 @@ def read_lab_results(path):
 
 
 def read_encyclopedia():
-    encyclopedia = pd.read_excel("Encyclopedia_mod with ranges_PN20190822.xlsx")
-    return encyclopedia
+    encyclopedia = pd.read_excel("Encyclopedia_mod with ranges_PN20190822.xlsx", sheet_name="Sheet1")
+    Calprotectin = pd.read_excel("Encyclopedia_mod with ranges_PN20190822.xlsx", sheet_name="Calprotectin")
+    return encyclopedia, Calprotectin
 
 
 def has_numbers(inputString):
@@ -109,7 +112,7 @@ def three_values(lesser_or_bigger_normal_range, result, normal_range, final_resu
     if check_if_list_is_in_list(new_range):
         pass
     if len(result) == 1:
-        lab_result = result[0]
+        lab_result = float(result[0])
     elif len(result) == 3:
         lab_result = float(result[0]) * float(result[1]) ** float(result[2])
     try:
@@ -264,7 +267,8 @@ def convert_scientific_notations_into_numbers_in_list(ranges, final_result, code
     return new_range
 
 
-def if_in_special_cases(code, result, final_result, ranges_display):
+def if_in_special_cases(code, result, final_result, ranges_display, gender, age_days):
+
     if (code == "KONSIS_Stuhl") or (code == "KONSISFE"):
         if result == "firm":
             final_result[code] = 1
@@ -285,7 +289,6 @@ def if_in_special_cases(code, result, final_result, ranges_display):
         ranges_display[code] = 'no_value'
     elif code == 'PHFE':
         try:
-
             final_result[code] = int(result)
         except:
             result = re.findall(r'\d+', result)
@@ -293,6 +296,50 @@ def if_in_special_cases(code, result, final_result, ranges_display):
             final_result[code] = result
         ranges_display[code] = '-3/3'
 
+    elif code == "CALPFE":
+        def check_value(real, normal):
+            if real < normal:
+                return 0
+            else:
+                return 1
+
+        real_val = float(".".join(re.findall('\d+', result)))
+        if gender == "M":
+            if age_days <= 180:
+                normal_value = 280
+
+            elif age_days <= 365:
+                normal_value = 180
+
+            elif age_days <= 1460:
+                normal_value = 75
+
+            elif age_days <= 65535:
+                normal_value = 50
+
+            elif age_days <= 4383:
+                normal_value = 50
+            normalized_value = check_value(real_val, normal_value)
+
+        elif gender == "W":
+            if age_days <= 180:
+                normal_value = 280
+
+            elif age_days <= 365:
+                normal_value = 180
+
+            elif age_days <= 1460:
+                normal_value = 75
+
+            elif age_days <= 65535:
+                normal_value = 50
+
+            elif age_days <= 4383:
+                normal_value = 50
+
+            normalized_value = check_value(real_val, normal_value)
+        ranges_display[code] = '0/1'
+        final_result[code] = [normalized_value, real_val]
     return final_result
 
 
@@ -325,3 +372,12 @@ def get_final_data_with_ranges(new_display_ranges, final_result):
         final_r[index] = temp_dict
 
     return final_r
+
+
+def calculates_age_days(birth_date):
+    today = date.today()
+    today = parser.parse(str(today))
+    birth_date = parser.parse(birth_date)
+    delta = today - birth_date
+    num_days = delta.days
+    return num_days
