@@ -1,13 +1,13 @@
 import helper
 import math
 import os
+import json
 
 
-skip_values = ['HELIOAGFE', 'HBFE', 'SCHIMMELPFE', 'SONSTA712', 'GIARDIALA178', 'BLASTOCHA178',
-               'BIFIDOH1A712', 'ENTAMOEBAHA178', 'DIENTAMOEBFA178', 'CYCLOSPORAA178', 'CRYPTOSPA178',
-               'BACTERH1A712']
+skip_values = []
 
-special_cases = ['KONSIS_Stuhl', 'KONSISFE', 'ENTEROTYPA712', "CALPFE"]
+special_cases = ['KONSIS_Stuhl', 'KONSISFE', 'ENTEROTYPA712', "CALPFE", "BIFIDOH1A712", "BACTERH1A712", "SONSTA712",
+                 "BIFIDOH2A712"]
 
 
 def get_key_value_pair_results(path):
@@ -63,4 +63,4 @@ def get_key_value_pair_results(path):
     return final_result, final_r
 
 
-# get_key_value_pair_results("data/Lab_results/11830338.20190916075542.csv")
+# get_key_value_pair_results("data/Lab_results/A712C-Maxi-Muster.csv")

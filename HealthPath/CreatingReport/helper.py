@@ -96,12 +96,15 @@ def get_position(new_range, lab_result):
         elif not np.isnan(new_range[pos]):
                              
             if lab_result > new_range[pos]:
-                try:
-                    if lab_result > new_range[pos] and np.isnan(new_range[pos+1]):
+
+                if len(new_range)-1 != pos:
+                    if lab_result > new_range[pos] and np.isnan(new_range[pos+1]).any():
                         new_range.insert(pos+1, lab_result)
                         break
-                except:
-                    pass
+                else:
+                    if lab_result > new_range[pos]:
+                        new_range.insert(pos+1, lab_result)
+                        break
 
             else:
                 new_range.insert(pos, lab_result)
@@ -137,7 +140,7 @@ def three_values(lesser_or_bigger_normal_range, result, normal_range, final_resu
             final_result[code] = position-3
 
     normalized_value = final_result[code]
-    final_result[code] = [normalized_value, round(lab_result, 1)]
+    final_result[code] = [normalized_value, round(lab_result, 2)]
     return final_result
 
 
@@ -220,22 +223,22 @@ def get_results(result, final_result, code):
 
 
 def string_values_with_normal_range(result, final_result, code, ranges_display):
-    if result == "positiv":
+    if result == "positiv" or result == "positive":
         final_result[code] = 2
-
-    elif result == 'negativ':
+    elif result == 'negativ' or result == "negative":
         final_result[code] = 0
     elif result == "p":
         final_result[code] = 0
     elif result == "n":
         final_result[code] = 2
+    elif result == "borderline" or result == "Borderline":
+        final_result[code] = 1
     else:
         final_result[code] = result
         ranges_display[code] = 'no_value'
         return final_result
     ranges_display[code] = 'n/p'
     return final_result
-
 
 
 def convert_scientific_notations_into_numbers_in_list(ranges, final_result, code):
@@ -270,11 +273,11 @@ def convert_scientific_notations_into_numbers_in_list(ranges, final_result, code
 def if_in_special_cases(code, result, final_result, ranges_display, gender, age_days):
 
     if (code == "KONSIS_Stuhl") or (code == "KONSISFE"):
-        if result == "firm":
+        if result == "firm" or result == "fest":
             final_result[code] = 1
         elif result == "tough pasty":
             final_result[code] = 2
-        elif result == "mushy":
+        elif result == "mushy" or result == "breiig":
             final_result[code] = 3
         elif result == "thin mushy":
             final_result[code] = 4
@@ -283,9 +286,17 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
         else:
             final_result[code] = ""
         ranges_display[code] = 'no_value'
-
+    elif code == "BACTERH1A712":
+        final_result[code] = result
+        ranges_display[code] = 'no_value'
+    elif code == "BIFIDOH1A712":
+        final_result[code] = result
+        ranges_display[code] = 'no_value'
     elif code == 'ENTEROTYPA712':
         final_result[code] = int(result)
+        ranges_display[code] = 'no_value'
+    elif code == "BIFIDOH2A712":
+        final_result[code] = result
         ranges_display[code] = 'no_value'
     elif code == 'PHFE':
         try:
@@ -295,6 +306,13 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
             result = int(result[0])
             final_result[code] = result
         ranges_display[code] = '-3/3'
+    elif code == "SONSTA712":
+        try:
+            final_result[code] = float(result)
+        except:
+            result = re.findall(r'\d+', result)
+            result = float(result[0])
+            final_result[code] = result
 
     elif code == "CALPFE":
         def check_value(real, normal):
