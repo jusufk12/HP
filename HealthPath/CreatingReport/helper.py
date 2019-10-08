@@ -275,13 +275,13 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
     if (code == "KONSIS_Stuhl") or (code == "KONSISFE"):
         if result == "firm" or result == "fest":
             final_result[code] = 1
-        elif result == "tough pasty":
+        elif result == "tough pasty" or result == "zähbreiig":
             final_result[code] = 2
         elif result == "mushy" or result == "breiig":
             final_result[code] = 3
-        elif result == "thin mushy":
+        elif result == "thin mushy" or result == "zähbreiig":
             final_result[code] = 4
-        elif result == "liquid":
+        elif result == "liquid" or result == "flüssig":
             final_result[code] = 5
         else:
             final_result[code] = ""
