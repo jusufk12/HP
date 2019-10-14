@@ -26,6 +26,8 @@ def get_key_value_pair_results(path):
     ranges_display = {}
     for code, result in analysis_code_and_result.items():
         if code not in skip_values:
+            if code == "HISTBAKSEQSUMA712A":
+                print()
             if code in special_cases:
                 final_result = helper.if_in_special_cases(code, result, final_result, ranges_display, gender, age_days)
                 continue
@@ -63,4 +65,4 @@ def get_key_value_pair_results(path):
     return final_result, final_r
 
 
-# get_key_value_pair_results("data/Lab_results/A712C-Maxi-Muster.csv")
+# get_key_value_pair_results("data/Lab_results/11830338.20190916075542.csv")

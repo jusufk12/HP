@@ -124,11 +124,24 @@ def three_values(lesser_or_bigger_normal_range, result, normal_range, final_resu
         pass
 
     position = new_range.index(lab_result)
+
     if new_range.count(lab_result) == 1:
         if lesser_or_bigger_normal_range == "<" and position == 3:
                 final_result[code] = 0
+        elif lesser_or_bigger_normal_range == "<" and position > 3:
+            final_result[code] = position - 3
         elif lesser_or_bigger_normal_range == ">" and position == 4:
             final_result[code] = 0
+        elif lesser_or_bigger_normal_range == ">" and position < 3:
+            final_result[code] = position - 3
+        elif lesser_or_bigger_normal_range == None and position == 4:
+            if type(new_range[new_range.index(lab_result) - 1]) == list:
+                if new_range[new_range.index(lab_result) - 1][1] > lab_result:
+                    final_result[code] = 0
+                else:
+                    final_result[code] = 1
+            else:
+                final_result[code] = position - 4
         else:
             final_result[code] = position-4
     elif new_range.count(lab_result) == 2:
