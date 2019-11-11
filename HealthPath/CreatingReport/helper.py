@@ -15,8 +15,8 @@ def read_lab_results(path):
 
 
 def read_encyclopedia():
-    encyclopedia = pd.read_excel("Encyclopedia_mod with ranges_PN20190822.xlsx", sheet_name="Sheet1")
-    Calprotectin = pd.read_excel("Encyclopedia_mod with ranges_PN20190822.xlsx", sheet_name="Calprotectin")
+    encyclopedia = pd.read_excel("Matrix.xlsx", sheet_name="Sheet1")
+    Calprotectin = pd.read_excel("Matrix.xlsx", sheet_name="Calprotectin")
     return encyclopedia, Calprotectin
 
 
@@ -111,7 +111,7 @@ def get_position(new_range, lab_result):
                 break
 
 
-def three_values(lesser_or_bigger_normal_range, result, normal_range, final_result, code, new_range):
+def three_values(lesser_or_bigger_normal_range, result, final_result, code, new_range, sign):
     if check_if_list_is_in_list(new_range):
         pass
     if len(result) == 1:
@@ -124,15 +124,12 @@ def three_values(lesser_or_bigger_normal_range, result, normal_range, final_resu
         pass
 
     position = new_range.index(lab_result)
-
     if new_range.count(lab_result) == 1:
         if lesser_or_bigger_normal_range == "<" and position == 3:
                 final_result[code] = 0
-        elif lesser_or_bigger_normal_range == "<" and position > 3:
-            final_result[code] = position - 3
         elif lesser_or_bigger_normal_range == ">" and position == 4:
             final_result[code] = 0
-        elif lesser_or_bigger_normal_range == ">" and position < 3:
+        elif lesser_or_bigger_normal_range == ">" and position == 3:
             final_result[code] = position - 3
         elif lesser_or_bigger_normal_range == None and position == 4:
             if type(new_range[new_range.index(lab_result) - 1]) == list:
@@ -145,13 +142,26 @@ def three_values(lesser_or_bigger_normal_range, result, normal_range, final_resu
         else:
             final_result[code] = position-4
     elif new_range.count(lab_result) == 2:
+        tmp_index = new_range.index(lab_result)
+        if new_range[tmp_index] == new_range[tmp_index+1]:
+            temp_value = 1
+        else:
+            temp_value = 0
         if lesser_or_bigger_normal_range == "<" and position == 3:
-            final_result[code] = 0
+            final_result[code] = 0 - temp_value
         elif lesser_or_bigger_normal_range == ">" and position == 4:
-            final_result[code] = 0
+            final_result[code] = 0 - temp_value
+        elif lesser_or_bigger_normal_range == ">" and position == 3:
+            final_result[code] = 0 - temp_value
         else:
             final_result[code] = position-3
+    elif new_range.count(lab_result) == 3:
+        if sign == "<":
+            final_result[code] = new_range.index(lab_result)-2
+        else:
+            final_result[code] = new_range.index(lab_result)-3
 
+        pass
     normalized_value = final_result[code]
     final_result[code] = [normalized_value, round(lab_result, 2)]
     return final_result
@@ -256,7 +266,17 @@ def string_values_with_normal_range(result, final_result, code, ranges_display):
 
 def convert_scientific_notations_into_numbers_in_list(ranges, final_result, code):
     new_range = []
+    first = True
     for r in ranges:
+        if type(r) == str:
+            if first:
+                if "<" in r:
+                    sign = "<"
+                elif ">" in r:
+                    sign = ">"
+                else:
+                    sign = None
+                first = False
         try:
             if np.isnan(r):
                 new_range.append(r)
@@ -280,7 +300,7 @@ def convert_scientific_notations_into_numbers_in_list(ranges, final_result, code
                 else:
                     result = float(result[0]) * float(result[1]) ** float(result[2])
                 new_range.append(result)
-    return new_range
+    return new_range, sign
 
 
 def if_in_special_cases(code, result, final_result, ranges_display, gender, age_days):
