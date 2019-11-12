@@ -127,10 +127,22 @@ def three_values(lesser_or_bigger_normal_range, result, final_result, code, new_
     if new_range.count(lab_result) == 1:
         if lesser_or_bigger_normal_range == "<" and position == 3:
                 final_result[code] = 0
+        elif lesser_or_bigger_normal_range == "<" and position == 4:
+            final_result[code] = 1
+        elif lesser_or_bigger_normal_range == "<" and position == 5:
+            final_result[code] = position - 3
+        elif lesser_or_bigger_normal_range == "<" and position == 6:
+            final_result[code] = position - 2
+
         elif lesser_or_bigger_normal_range == ">" and position == 4:
             final_result[code] = 0
         elif lesser_or_bigger_normal_range == ">" and position == 3:
-            final_result[code] = position - 3
+            final_result[code] = position - 4
+        elif lesser_or_bigger_normal_range == ">" and position == 2:
+            final_result[code] = position - 4
+        elif lesser_or_bigger_normal_range == ">" and position == 1:
+            final_result[code] = -3
+
         elif lesser_or_bigger_normal_range == None and position == 4:
             if type(new_range[new_range.index(lab_result) - 1]) == list:
                 if new_range[new_range.index(lab_result) - 1][1] > lab_result:
@@ -148,7 +160,7 @@ def three_values(lesser_or_bigger_normal_range, result, final_result, code, new_
         else:
             temp_value = 0
         if lesser_or_bigger_normal_range == "<" and position == 3:
-            final_result[code] = 0 - temp_value
+            final_result[code] = 0
         elif lesser_or_bigger_normal_range == ">" and position == 4:
             final_result[code] = 0 - temp_value
         elif lesser_or_bigger_normal_range == ">" and position == 3:
