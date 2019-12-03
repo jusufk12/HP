@@ -338,10 +338,10 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
         final_result[code] = result
         ranges_display[code] = 'no_value'
     elif code == 'ENTEROTYPA712':
-        if type(result) == str:
-            final_result[code] = 1
-        else:
+        try:
             final_result[code] = int(result)
+        except:
+            final_result[code] = 1
         ranges_display[code] = 'no_value'
     elif code == "BIFIDOH2A712":
         final_result[code] = result
