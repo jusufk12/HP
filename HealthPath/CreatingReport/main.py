@@ -25,8 +25,6 @@ def get_key_value_pair_results(path):
     final_result = {}
     ranges_display = {}
     for code, result in analysis_code_and_result.items():
-        if code == "ENTEROTYPA712":
-            print()
         if code not in skip_values:
             if code in special_cases:
                 final_result = helper.if_in_special_cases(code, result, final_result, ranges_display, gender, age_days)
@@ -65,4 +63,4 @@ def get_key_value_pair_results(path):
     return final_result, final_r
 
 
-# get_key_value_pair_results("data/Lab_results/cargill.csv")
+# get_key_value_pair_results("data/Lab_results/selma-gokcen.csv")

@@ -111,6 +111,13 @@ def get_position(new_range, lab_result):
                 break
 
 
+def check_if_list_is_in_list(list_of_values):
+    for val in list_of_values:
+        if type(val) == list:
+            return True
+    return False
+
+
 def three_values(lesser_or_bigger_normal_range, result, final_result, code, new_range, sign):
     if check_if_list_is_in_list(new_range):
         pass
@@ -151,6 +158,10 @@ def three_values(lesser_or_bigger_normal_range, result, final_result, code, new_
                     final_result[code] = 1
             else:
                 final_result[code] = position - 4
+        elif lesser_or_bigger_normal_range == None and check_if_list_is_in_list(new_range) and np.isnan(new_range[new_range.index(lab_result) - 1]):
+            final_result[code] = position - 4
+        elif lesser_or_bigger_normal_range == None and check_if_list_is_in_list(new_range) and code == 'SIGAFE':
+            final_result[code] = position - 3
         else:
             final_result[code] = position-4
     elif new_range.count(lab_result) == 2:
@@ -324,7 +335,7 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
             final_result[code] = 2
         elif result == "mushy" or result == "breiig":
             final_result[code] = 3
-        elif result == "thin mushy" or result == "zähbreiig":
+        elif result == "thin mushy" or result == "dünnbreiig":
             final_result[code] = 4
         elif result == "liquid" or result == "flüssig":
             final_result[code] = 5
