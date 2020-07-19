@@ -396,6 +396,8 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
 
             elif age_days <= 4383:
                 normal_value = 50
+            else:
+                normal_value = 50
             normalized_value = check_value(real_val, normal_value)
 
         elif gender == "W":
@@ -413,7 +415,8 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
 
             elif age_days <= 4383:
                 normal_value = 50
-
+            else:
+                normal_value = 50
             normalized_value = check_value(real_val, normal_value)
 
         elif gender == "U":
@@ -430,6 +433,8 @@ def if_in_special_cases(code, result, final_result, ranges_display, gender, age_
                 normal_value = 50
 
             elif age_days <= 4383:
+                normal_value = 50
+            else:
                 normal_value = 50
 
             normalized_value = check_value(real_val, normal_value)
